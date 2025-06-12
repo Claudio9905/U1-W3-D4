@@ -1,0 +1,93 @@
+body {
+  background-image: url(https://img.freepik.com/foto-premium/sfondi-di-texture-di-tavolo-in-legno-vuoto-reale_254791-1029.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 50%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: linear-gradient(
+    to top,
+    rgb(102, 39, 39),
+    rgba(165, 143, 64, 0.927)
+  );
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.382),
+    1px 1px 5px 2px rgba(0, 0, 0, 0.348) inset;
+}
+
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(200, 46, 46, 0.91);
+  text-shadow: 2px 1px 4px black;
+  font-size: 3em;
+}
+
+main #showNumber {
+  width: 50%;
+}
+
+#buttonNumber {
+  margin-top: 1em;
+  margin-left: 1em;
+  background-color: brown;
+  height: 3em;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.416),
+    0px 0px 10px 0px black inset;
+  display: inline-block;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+#number {
+  border: 5px solid rgba(221, 45, 45, 0.842);
+  width: 6%;
+  height: 4%;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(188, 48, 48);
+  -webkit-text-stroke: 1px rgb(140, 39, 39);
+  display: inline-block;
+  margin-left: 1em;
+  position: relative;
+  top: 8px;
+  background-color: rgba(222, 184, 135, 0.895);
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.736),
+    1px 1px 1px 0px rgb(138, 21, 21) inset;
+}
+
+#tabellone {
+  width: 80%;
+}
+
+.cell {
+  display: inline-block;
+  width: 10%;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(135, 36, 36);
+  box-shadow: 1px 1px 1px 2px black,
+    1px 1px 5px 2px rgba(177, 141, 61, 0.627) inset;
+  margin: 5px;
+}
+
+.cellCheck {
+  border-radius: 50px;
+  border: 5px solid rgba(221, 45, 45, 0.842);
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(188, 48, 48);
+  -webkit-text-stroke: 1px rgb(140, 39, 39);
+  background-color: rgba(222, 184, 135, 0.895);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.374),
+    1px 1px 1px 0px rgb(138, 21, 21) inset;
+}
