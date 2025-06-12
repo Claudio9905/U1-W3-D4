@@ -13,19 +13,25 @@ const createCell = function () {
 
 createCell();
 
-const takeNumber = function () {
-  const buttonNumber = document.getElementById("buttonNumber");
-  const h3Number = document.getElementById("number");
+const extractNumber = [];
 
-  buttonNumber.addEventListener("click", (e) => {
-    const randomNumber = Math.ceil(Math.random() * 76);
-    h3Number.innerText = randomNumber;
-  });
+const buttonNumber = document.getElementById("buttonNumber");
+const h3Number = document.getElementById("number");
 
-  buttonNumber.addEventListener("click", () => {
-    const cellMarker = document.querySelectorAll(".cell h3");
-    for (let i = 0; i < cellMarker.length; i++) {
-      cellMarker[i].classList.add("cellCheck");
+buttonNumber.addEventListener("click", () => {
+  const randomNumber = Math.floor(Math.random() * 76) + 1;
+  h3Number.innerText = randomNumber;
+
+  if (extractNumber.includes(randomNumber)) {
+    alert(`Il numero ${randomNumber} è già uscito`);
+  }
+
+  extractNumber.push(randomNumber);
+  const cellMarker = document.querySelectorAll(".cell h3");
+
+  cellMarker.forEach((number) => {
+    if (randomNumber === parseInt(number.innerText)) {
+      number.classList.add("cellCheck");
     }
   });
-};
+});
