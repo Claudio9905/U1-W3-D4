@@ -27,6 +27,12 @@ header h1 {
   font-size: 3em;
 }
 
+main {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main #showNumber {
   width: 50%;
 }
@@ -47,7 +53,7 @@ main #showNumber {
 
 #number {
   border: 5px solid rgba(221, 45, 45, 0.842);
-  width: 6%;
+  width: 10%;
   height: 4%;
   font-size: 2em;
   text-align: center;
@@ -64,7 +70,9 @@ main #showNumber {
 }
 
 #tabellone {
-  width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cell {
@@ -82,7 +90,9 @@ main #showNumber {
 .cellCheck {
   border-radius: 50px;
   border: 5px solid rgba(221, 45, 45, 0.842);
-  width: 30%;
+  width: 50%;
+  height: 1.3em;
+  font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   color: rgb(188, 48, 48);
@@ -90,4 +100,54 @@ main #showNumber {
   background-color: rgba(222, 184, 135, 0.895);
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.374),
     1px 1px 1px 0px rgb(138, 21, 21) inset;
+}
+
+#table-generate {
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.label {
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#cartellaN {
+  width: 10em;
+  margin-left: 1em;
+}
+
+.cartella {
+  display: inline-block;
+  width: 40%;
+  height: 15em;
+  margin: 1em;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.cartella .zone {
+  display: inline-block;
+  width: 7%;
+  height: 2.5em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  /* border: 1px solid black; */
+}
+
+.cartella .zone h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  bottom: 10px;
+  font-size: 1.2em;
+}
+
+.coverNumber {
+  background-color: rgba(0, 255, 255, 0.251);
+  color: rgba(0, 0, 0, 0.374);
+  border-top: 5px solid rgba(77, 74, 74, 0.692);
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.39);
 }

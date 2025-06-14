@@ -1,7 +1,7 @@
 const createCell = function () {
   const tabellone = document.getElementById("tabellone");
 
-  for (let i = 0; i < 76; i++) {
+  for (let i = 0; i < 90; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
     const numberCell = document.createElement("h3");
@@ -19,7 +19,7 @@ const buttonNumber = document.getElementById("buttonNumber");
 const h3Number = document.getElementById("number");
 
 buttonNumber.addEventListener("click", () => {
-  const randomNumber = Math.floor(Math.random() * 76) + 1;
+  const randomNumber = Math.floor(Math.random() * 90) + 1;
   h3Number.innerText = randomNumber;
 
   if (extractNumber.includes(randomNumber)) {
